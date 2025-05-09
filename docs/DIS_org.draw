@@ -1,0 +1,389 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15" version="26.2.2">
+  <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
+    <mxGraphModel dx="1190" dy="696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dNxyNK7c78bLwvsdeMH5-11" value="Organization-Chart Dynamic Innovative Studios" style="swimlane;html=1;startSize=20;horizontal=1;containerType=tree;glass=0;" parent="1" vertex="1">
+          <mxGeometry y="70" width="1650" height="1690" as="geometry" />
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Bleck" position="Founder &amp; CEO" location="HQ" email="coutinho4gaming@gmail.com" placeholders="1" id="dNxyNK7c78bLwvsdeMH5-12">
+          <mxCell style="label;image=https://cdn0.iconfinder.com/data/icons/mono2/100/user-admin-1024.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="650" y="30" width="160" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="dNxyNK7c78bLwvsdeMH5-16" target="9JuQ_mCEVjS_lTR1WEsM-60" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="928" y="220" />
+              <mxPoint x="837" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18eYyhjZ-XDADH2ncF1o-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-11" source="dNxyNK7c78bLwvsdeMH5-16" target="dNxyNK7c78bLwvsdeMH5-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:%email%&quot;&gt;Email&lt;/a&gt;" name="Damion" position="Co-Founder" location="HQ" email="damiondeanbutler@gmail.com" placeholders="1" id="dNxyNK7c78bLwvsdeMH5-16">
+          <mxCell style="label;image=https://cdn0.iconfinder.com/data/icons/mono2/100/user-admin-1024.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeFolding=1;treeMoving=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="860" y="30" width="136" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="dNxyNK7c78bLwvsdeMH5-11" source="dNxyNK7c78bLwvsdeMH5-12" target="9JuQ_mCEVjS_lTR1WEsM-60" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="220" />
+              <mxPoint x="837" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Production Director" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-60">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/air-pollution/512/air-pollution-contamination_-13-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="745.5" y="320" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="dNxyNK7c78bLwvsdeMH5-11" source="dNxyNK7c78bLwvsdeMH5-16" target="9JuQ_mCEVjS_lTR1WEsM-63" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="928" y="220" />
+              <mxPoint x="1038" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" email="damiondeanbutler@gmail.com" placeholders="1" department="Human Resources (HR)" id="9JuQ_mCEVjS_lTR1WEsM-63">
+          <mxCell style="label;image=https://cdn3.iconfinder.com/data/icons/human-resources-outline/60/081_-_Portfolio-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeFolding=1;treeMoving=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="970" y="270" width="190" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font color=&quot;#808080&quot;&gt;&lt;span style=&quot;caret-color: rgb(128, 128, 128);&quot;&gt;&lt;i&gt;%department%&lt;/i&gt;&lt;/span&gt;&lt;/font&gt;" email="damiondeanbutler@gmail.com" placeholders="1" department="Legal &amp; Business" id="9JuQ_mCEVjS_lTR1WEsM-64">
+          <mxCell style="label;image=https://cdn1.iconfinder.com/data/icons/legal-1/512/legal-law-06-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeFolding=1;treeMoving=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="540" y="270" width="166" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="dNxyNK7c78bLwvsdeMH5-12" target="9JuQ_mCEVjS_lTR1WEsM-64" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="928" y="100" as="sourcePoint" />
+            <mxPoint x="1038" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="730" y="220" />
+              <mxPoint x="638" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="18eYyhjZ-XDADH2ncF1o-4" target="9JuQ_mCEVjS_lTR1WEsM-78" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="320" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="837" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" target="9JuQ_mCEVjS_lTR1WEsM-87" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="363" y="870" />
+              <mxPoint x="492" y="870" />
+            </Array>
+            <mxPoint x="363" y="820" as="sourcePoint" />
+            <mxPoint x="491.5" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-78" target="9JuQ_mCEVjS_lTR1WEsM-90" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="837" y="610" />
+              <mxPoint x="615" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-122" target="9JuQ_mCEVjS_lTR1WEsM-89" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="363" y="820" />
+              <mxPoint x="362" y="820" />
+              <mxPoint x="362" y="870" />
+              <mxPoint x="222" y="870" />
+            </Array>
+            <mxPoint x="363" y="820" as="sourcePoint" />
+            <mxPoint x="221.5" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Team Leader" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-78">
+          <mxCell style="label;image=https://cdn1.iconfinder.com/data/icons/corporate-management-2/48/vector_881_23-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="745.5" y="520" width="183" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-78" target="9JuQ_mCEVjS_lTR1WEsM-82" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="837" y="340" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="837" y="600" />
+              <mxPoint x="837" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-82" target="9JuQ_mCEVjS_lTR1WEsM-117" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="836" y="730" />
+              <mxPoint x="836" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Senior Moderator" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-82">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/life-skills/64/confidence-self-faith-trust-leader-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="745.5" y="660" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;shape=link;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-60" target="9JuQ_mCEVjS_lTR1WEsM-84" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="928" y="100" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="837" y="420" />
+              <mxPoint x="710" y="420" />
+              <mxPoint x="710" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Assistant Producer" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-84">
+          <mxCell style="label;image=https://cdn1.iconfinder.com/data/icons/school-11/100/Direction-512.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="480" y="360" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Technical Director" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-86">
+          <mxCell style="label;image=https://cdn3.iconfinder.com/data/icons/web-design-and-development-9-2/66/429-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="1000.5" y="1120" width="183" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Art Director" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-87">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/life-skills/64/confidence-self-faith-trust-leader-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="400" y="890" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Senior Writer" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-89">
+          <mxCell style="label;image=https://cdn3.iconfinder.com/data/icons/miscellaneous-250-line/128/novels_fiction_narrative_novella_story_tale_book-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="130" y="890" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-90" target="9JuQ_mCEVjS_lTR1WEsM-119" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Marketing Manager" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-90">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/life-skills/64/confidence-self-faith-trust-leader-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="523" y="660" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-78" target="9JuQ_mCEVjS_lTR1WEsM-94" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="837" y="390" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="837" y="610" />
+              <mxPoint x="1092" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="LiveOps Manager" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-94">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/life-skills/64/confidence-self-faith-trust-leader-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="1000.5" y="660" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-97" target="9JuQ_mCEVjS_lTR1WEsM-123" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Quality Assurance Manager" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-97">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/logistics-delivery-5-1/66/229-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="880" y="1360" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-78" target="9JuQ_mCEVjS_lTR1WEsM-99" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="837" y="390" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="837" y="610" />
+              <mxPoint x="1312" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Audio Director" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-99">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/life-skills/64/confidence-self-faith-trust-leader-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="1220.5" y="660" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-78" target="9JuQ_mCEVjS_lTR1WEsM-101" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="687" y="390" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="837" y="610" />
+              <mxPoint x="360" y="610" />
+              <mxPoint x="360" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Creative Director" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-101">
+          <mxCell style="label;image=https://cdn4.iconfinder.com/data/icons/marketing-and-digital-marketing-1/32/business_marketing_advertising_creative_idea-512.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="270" y="660" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-94" target="9JuQ_mCEVjS_lTR1WEsM-103" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="627" y="580" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1092" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" placeholders="1" department="R&amp;D" id="9JuQ_mCEVjS_lTR1WEsM-103">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/project-management-10-1/68/480-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="1000.5" y="770" width="183" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-103" target="9JuQ_mCEVjS_lTR1WEsM-105" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1291" y="730" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1092" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" placeholders="1" department="LiveOps" id="9JuQ_mCEVjS_lTR1WEsM-105">
+          <mxCell style="label;image=https://cdn3.iconfinder.com/data/icons/fluent-regular-24px-vol-4/24/ic_fluent_live_24_regular-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="1000.5" y="890" width="183" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" placeholders="1" department="IT/Technical Support" id="9JuQ_mCEVjS_lTR1WEsM-109">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/customer-service-109/75/technical_support_service_maintenance_management_online_support-512.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="1000.5" y="1000" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" placeholders="1" department="Data/Analytics" id="9JuQ_mCEVjS_lTR1WEsM-111">
+          <mxCell style="label;image=https://cdn4.iconfinder.com/data/icons/data-science/64/35_cloud_based_architecture-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="1120" y="1360" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-99" target="9JuQ_mCEVjS_lTR1WEsM-113" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="627" y="580" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1312" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" placeholders="1" department="Audio" id="9JuQ_mCEVjS_lTR1WEsM-113">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/music-colored-outlined-pixel-perfect/64/music-35-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="1220.5" y="770" width="183" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-87" target="9JuQ_mCEVjS_lTR1WEsM-115" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="627" y="580" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="492" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" location="HQ" placeholders="1" department="Art &amp; Animation" id="9JuQ_mCEVjS_lTR1WEsM-115">
+          <mxCell style="label;image=https://cdn1.iconfinder.com/data/icons/art-and-design-line/64/art_design_blueprint_architecture_interior-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="400" y="1000" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" location="HQ" placeholders="1" department="Programming/Engineering" id="9JuQ_mCEVjS_lTR1WEsM-116">
+          <mxCell style="label;image=https://cdn0.iconfinder.com/data/icons/education-364/24/school-programming-laptop-learning-coding-education-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="987" y="1230" width="210" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" location="HQ" placeholders="1" department="Moderation" id="9JuQ_mCEVjS_lTR1WEsM-117">
+          <mxCell style="label;image=https://cdn3.iconfinder.com/data/icons/abstract-1/512/moderator-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="745.5" y="770" width="180" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" location="HQ" placeholders="1" department="Marketing and Community" id="9JuQ_mCEVjS_lTR1WEsM-119">
+          <mxCell style="label;image=https://cdn4.iconfinder.com/data/icons/social-media-strategy-7/64/brand-awareness-recognition-marketing-strategy-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="524.5" y="770" width="180" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" location="HQ" placeholders="1" department="Writing and Narrative Design" id="9JuQ_mCEVjS_lTR1WEsM-120">
+          <mxCell style="label;image=https://cdn0.iconfinder.com/data/icons/miscellaneous-182-line/128/story_narrative_saga_novel_biography_content_writing_paper_storytelling_writing_article-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="133" y="1000" width="180" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" location="HQ" placeholders="1" department="Game Design" id="9JuQ_mCEVjS_lTR1WEsM-122">
+          <mxCell style="label;image=https://cdn1.iconfinder.com/data/icons/design-thinking-21/64/Prototype-blueprint-idea-browser-design-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="273" y="770" width="180" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Quality Assurance Leader(s)" location="HQ" email="template@gmail.com" placeholders="1" id="9JuQ_mCEVjS_lTR1WEsM-123">
+          <mxCell style="label;image=https://cdn4.iconfinder.com/data/icons/cleaning-199/66/6-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="880" y="1460" width="183" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.488;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-89" target="9JuQ_mCEVjS_lTR1WEsM-120" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.483;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-101" target="9JuQ_mCEVjS_lTR1WEsM-122" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9JuQ_mCEVjS_lTR1WEsM-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-123" target="9JuQ_mCEVjS_lTR1WEsM-131" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-48" y="730" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;i style=&quot;caret-color: rgb(128, 128, 128); color: rgb(128, 128, 128);&quot;&gt;%department%&lt;/i&gt;" placeholders="1" department="Quality Assurance" id="9JuQ_mCEVjS_lTR1WEsM-131">
+          <mxCell style="label;image=https://cdn3.iconfinder.com/data/icons/network-and-communications-10/32/network_Bug_quality_assurance_search_testing-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" parent="dNxyNK7c78bLwvsdeMH5-11" vertex="1">
+            <mxGeometry x="880" y="1570" width="183" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="1TeoVL7-UzH52uaJZczU-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-105" target="9JuQ_mCEVjS_lTR1WEsM-109" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="1060" as="sourcePoint" />
+            <mxPoint x="850" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1TeoVL7-UzH52uaJZczU-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-109" target="9JuQ_mCEVjS_lTR1WEsM-86" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="1260" as="sourcePoint" />
+            <mxPoint x="850" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1TeoVL7-UzH52uaJZczU-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-86" target="9JuQ_mCEVjS_lTR1WEsM-116" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="1360" as="sourcePoint" />
+            <mxPoint x="820" y="1310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1TeoVL7-UzH52uaJZczU-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-116" target="9JuQ_mCEVjS_lTR1WEsM-97" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="1460" as="sourcePoint" />
+            <mxPoint x="820" y="1410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1092" y="1340" />
+              <mxPoint x="970" y="1340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1TeoVL7-UzH52uaJZczU-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-11" source="9JuQ_mCEVjS_lTR1WEsM-116" target="9JuQ_mCEVjS_lTR1WEsM-111" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="1360" as="sourcePoint" />
+            <mxPoint x="820" y="1310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1092" y="1340" />
+              <mxPoint x="1210" y="1340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18eYyhjZ-XDADH2ncF1o-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" target="18eYyhjZ-XDADH2ncF1o-4" source="9JuQ_mCEVjS_lTR1WEsM-60" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="355" />
+              <mxPoint x="1030" y="460" />
+            </Array>
+            <mxPoint x="928" y="170" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="%name%&lt;br&gt;&lt;i style=&quot;color: gray;&quot;&gt;%position%&lt;/i&gt;&lt;br&gt;&lt;a href=&quot;mailto:coutinho4gaming@gmail.com&quot;&gt;Email&lt;/a&gt;" name="Name" position="Project Manager" location="HQ" email="template@gmail.com" placeholders="1" id="18eYyhjZ-XDADH2ncF1o-4">
+          <mxCell style="label;image=https://cdn2.iconfinder.com/data/icons/project-management-12/68/554-256.png;whiteSpace=wrap;html=1;rounded=0;glass=0;treeMoving=1;treeFolding=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+            <mxGeometry x="745.5" y="430" width="183" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
