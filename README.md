@@ -2,9 +2,9 @@
 
 [![Dynamic Innovative Studio](public/icons/DIS_Original_logo.png)](https://dynamic-innovative-studio.web.app)
 
-[![npm version](https://img.shields.io/npm/v/friendly-date.svg)](https://www.npmjs.com/package/friendly-date)
-[![license](https://img.shields.io/npm/l/friendly-date.svg)](https://github.com/yourusername/friendly-date/blob/main/LICENSE)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/friendly-date)](https://bundlephobia.com/package/friendly-date)
+[![npm version](https://img.shields.io/npm/v/@dynamic-innovative-studio/friendly-dates.svg)](https://www.npmjs.com/package/@dynamic-innovative-studio/friendly-dates)
+[![license](https://img.shields.io/npm/l/@dynamic-innovative-studio/friendly-dates.svg)](https://github.com/Dynamic-Innovative-Studio/friendly-dates/blob/main/LICENSE)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@dynamic-innovative-studio/friendly-dates)](https://bundlephobia.com/package/@dynamic-innovative-studio/friendly-dates)
 
 This is the public repository for the Friendly-Dates - a cutting-edge technology, secure, safe and lighting fast library.
 This technology is owned by Dynamic Innovative Studio.
