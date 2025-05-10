@@ -22,13 +22,13 @@ This technology is owned by Dynamic Innovative Studio.
 ## Installation
 
 ```bash
-npm install friendly-date
+npm install friendly-dates
 ```
 
 or
 
 ```bash
-yarn add friendly-date
+yarn add friendly-dates
 ```
 
 ## Usage
