@@ -1,0 +1,136 @@
+<!--
+
+DEMO.HTML
+
+@version 1.0.0
+@author BleckWolf25
+
+@license MIT Dynamic Innovative Studio
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friendly Dates Demo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 2rem;
+        }
+
+        .example {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        select {
+            margin-bottom: 0.5rem;
+        }
+
+        .output {
+            font-weight: bold;
+            color: #2a7ae2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Friendly Dates Demo</h1>
+    <div class="example">
+        <label>
+            Date/time to format:
+            <input id="dateInput" type="datetime-local" value="">
+        </label>
+        <label>
+            Reference date/time (optional):
+            <input id="refInput" type="datetime-local" value="">
+        </label>
+        <label>
+            Locale:
+            <select id="localeSelect">
+                <option value="enUS">English (enUS)</option>
+                <option value="ptBR">Português (ptBR)</option>
+            </select>
+        </label>
+        <label>
+            Include time:
+            <input id="includeTime" type="checkbox" checked>
+        </label>
+        <label>
+            Time format:
+            <select id="timeFormat">
+                <option value="12h">12h</option>
+                <option value="24h">24h</option>
+            </select>
+        </label>
+        <label>
+            Max unit:
+            <select id="maxUnit">
+                <option value="year">year</option>
+                <option value="month">month</option>
+                <option value="week">week</option>
+                <option value="day">day</option>
+                <option value="hour">hour</option>
+                <option value="minute">minute</option>
+                <option value="second">second</option>
+            </select>
+        </label>
+        <label>
+            Just now threshold (seconds):
+            <input id="justNowThreshold" type="number" value="30" min="0">
+        </label>
+        <label>
+            Use words for small numbers:
+            <input id="useWords" type="checkbox" checked>
+        </label>
+        <button id="formatBtn">Format</button>
+        <div class="output" id="output"></div>
+    </div>
+    <script type="module">
+        import format, { enUS, ptBR } from '../src/friendly-dates.ts';
+
+        // Set default date/time to now
+        const now = new Date();
+        document.getElementById('dateInput').value = now.toISOString().slice(0, 16);
+
+        function getLocale(val) {
+            if (val === 'ptBR') return ptBR;
+            return enUS;
+        }
+
+        document.getElementById('formatBtn').onclick = function () {
+            const dateStr = document.getElementById('dateInput').value;
+            const refStr = document.getElementById('refInput').value;
+            const locale = getLocale(document.getElementById('localeSelect').value);
+            const includeTime = document.getElementById('includeTime').checked;
+            const timeFormat = document.getElementById('timeFormat').value;
+            const maxUnit = document.getElementById('maxUnit').value;
+            const justNowThreshold = Number(document.getElementById('justNowThreshold').value);
+            const useWords = document.getElementById('useWords').checked;
+
+            let date = dateStr ? new Date(dateStr) : new Date();
+            let ref = refStr ? new Date(refStr) : undefined;
+
+            try {
+                const result = format(
+                    date,
+                    ref,
+                    { locale, includeTime, timeFormat, maxUnit, justNowThreshold, useWords }
+                );
+                document.getElementById('output').textContent = result;
+            } catch (e) {
+                document.getElementById('output').textContent = 'Error: ' + e.message;
+            }
+        };
+    </script>
+</body>
+
+</html>
