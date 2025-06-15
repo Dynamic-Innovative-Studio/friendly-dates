@@ -88,6 +88,8 @@ format(new Date(Date.now() - 20 * 1000), undefined, {
 format(new Date()); // Using Date object
 format("2023-10-15T12:00:00Z"); // Using ISO string
 format(1697371200000); // Using timestamp
+```
+
 
 ### Creating Custom Locales
 
