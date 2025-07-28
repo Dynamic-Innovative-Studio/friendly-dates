@@ -1,307 +1,181 @@
-# Friendly-Dates
+# 📆 Friendly-Dates
 
 [![Dynamic Innovative Studio](public/icons/DIS_Original_logo.png)](https://dynamic-innovative-studio.web.app)
 [![Friendly Dates](public/icons/friendly-dates-logo.png)](https://github.com/Dynamic-Innovative-Studio/friendly-dates)
-
-<<<<<<< HEAD
 [![CI](https://github.com/Dynamic-Innovative-Studio/friendly-dates/actions/workflows/ci.yaml/badge.svg)](https://github.com/Dynamic-Innovative-Studio/friendly-dates/actions/workflows/ci.yaml)
 [![Code Quality](https://github.com/Dynamic-Innovative-Studio/friendly-dates/actions/workflows/code-quality.yaml/badge.svg)](https://github.com/Dynamic-Innovative-Studio/friendly-dates/actions/workflows/code-quality.yaml)
 [![npm version](https://img.shields.io/npm/v/@dynamic-innovative-studio/friendly-dates.svg)](https://www.npmjs.com/package/@dynamic-innovative-studio/friendly-dates)
 [![license](https://img.shields.io/npm/l/@dynamic-innovative-studio/friendly-dates.svg)](https://github.com/Dynamic-Innovative-Studio/friendly-dates/blob/main/LICENSE)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@dynamic-innovative-studio/friendly-dates)](https://bundlephobia.com/package/@dynamic-innovative-studio/friendly-dates)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
-=======
-[![npm version](https://img.shields.io/npm/v/@dynamic-innovative-studio/friendly-dates.svg)](https://www.npmjs.com/package/@dynamic-innovative-studio/friendly-dates)
-[![license](https://img.shields.io/npm/l/@dynamic-innovative-studio/friendly-dates.svg)](https://github.com/Dynamic-Innovative-Studio/friendly-dates/blob/main/LICENSE)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/@dynamic-innovative-studio/friendly-dates)](https://bundlephobia.com/package/@dynamic-innovative-studio/friendly-dates)
->>>>>>> 09af5265e158d25861497789041b1e2a29c10c14
 
-This is the public repository for the Friendly-Dates - a cutting-edge technology, secure, safe and lighting fast library.
-This technology is owned by Dynamic Innovative Studio.
+A fast, secure, tiny, fully-typed and i18n-ready date formatting library by **Dynamic Innovative Studio**.
 
-## Features
+---
 
-- 🔥 **Tiny footprint** - Less than 2KB minified and gzipped
-- 🚀 **Zero dependencies** - Keeps your project lean
-- 🛡️ **Fully typed** - Built with TypeScript for better developer experience
-- 🌎 **i18n support** - Easy localization (8 languages in total)
-- ⚡ **Huge performance** - Optimized by design for speed and minimal memory usage
-- 📦 **Tree-shakeable** - Import only what you need
-- 🧪 **Well tested** - Comprehensive test coverage
+## ✨ Features
 
-## Installation
+* 🔥 **Tiny footprint** – Less than 2KB min+gzip
+* 🚀 **Zero dependencies** – Lean and efficient
+* 🛡️ **Type-safe** – Written in strict TypeScript
+* 🌍 **i18n support** – 8+ built-in locales + custom locales
+* ⚡ **High performance** – Optimized for speed and memory
+* 📦 **Tree-shakeable** – Only import what you need
+* 🧪 **Battle-tested** – High test coverage
+
+---
+
+## 📦 Installation
 
 ```bash
-<<<<<<< HEAD
 npm install @dynamic-innovative-studio/friendly-dates
-=======
-npm install friendly-dates
->>>>>>> 09af5265e158d25861497789041b1e2a29c10c14
-```
-
-or
-
-```bash
-<<<<<<< HEAD
+# or
 yarn add @dynamic-innovative-studio/friendly-dates
-```
-
-or
-
-```bash
+# or
 pnpm add @dynamic-innovative-studio/friendly-dates
-=======
-yarn add friendly-dates
->>>>>>> 09af5265e158d25861497789041b1e2a29c10c14
 ```
 
-## Usage
+---
 
-### Basic Usage
+## 🔧 Usage
 
-```typescript
-import { format } from '@dynamic-innovative-studio/friendly-dates';
-// or
+### Basic
+
+```ts
 import format from '@dynamic-innovative-studio/friendly-dates';
 
-// Basic usage (relative to current time)
 format(new Date()); // "Just now"
 format(new Date(Date.now() - 5 * 60 * 1000)); // "5 minutes ago"
-format(new Date(Date.now() + 2 * 60 * 60 * 1000)); // "in 2 hours"
+```
 
-// With a specific reference date
-const referenceDate = new Date('2023-10-15T12:00:00Z');
-format(new Date('2023-10-14T15:30:00Z'), referenceDate); // "Yesterday at 3:30 PM"
-format(new Date('2023-10-16T09:15:00Z'), referenceDate); // "Tomorrow at 9:15 AM"
-format(new Date('2023-10-12T10:00:00Z'), referenceDate); // "Last Thursday at 10:00 AM"
+### Reference Date Support
+
+```ts
+format(new Date('2023-10-14T15:30:00Z'), new Date('2023-10-15T12:00:00Z'));
+// => "Yesterday at 3:30 PM"
 ```
 
 ### With Options
 
-```typescript
-import format, { ptPT } from 'friendly-date';
+```ts
+import format, { ptPT } from '@dynamic-innovative-studio/friendly-dates';
 
-// Using Portuguese (Portugal) locale
-format(new Date(Date.now() - 5 * 60 * 1000), undefined, { locale: ptPT }); // "5 minutos atrás"
-
-// Customizing format options
-format(new Date(Date.now() - 2 * 24 * 60 * 60 * 1000), undefined, {
-  includeTime: false,   // Don't include time
-  timeFormat: '24h',    // Use 24-hour format
-  maxUnit: 'day',       // Don't convert to weeks/months/years
-  useWords: false       // Use numbers instead of words
-}); // "2 days ago"
-
-// Maximum unit threshold
-format(new Date(Date.now() - 45 * 24 * 60 * 60 * 1000), undefined, {
-  maxUnit: 'month'      // Will use months instead of days
-}); // "a month ago"
-
-format(new Date(Date.now() - 45 * 24 * 60 * 60 * 1000), undefined, {
-  maxUnit: 'day'        // Force using days
-}); // "45 days ago"
-
-// Custom "just now" threshold
-format(new Date(Date.now() - 20 * 1000), undefined, {
-  justNowThreshold: 30  // Consider "just now" if within 30 seconds
-}); // "Just now"
-
-format(new Date(Date.now() - 20 * 1000), undefined, {
-  justNowThreshold: 10  // Only consider "just now" if within 10 seconds
-}); // "20 seconds ago"
-
-// Using with Dates, ISO strings, or timestamps all work
-format(new Date()); // Using Date object
-format("2023-10-15T12:00:00Z"); // Using ISO string
-format(1697371200000); // Using timestamp
-```
-<<<<<<< HEAD
-=======
-
->>>>>>> 09af5265e158d25861497789041b1e2a29c10c14
-
-### Creating Custom Locales
-
-```typescript
-import { format, LocaleConfig } from 'friendly-date';
-
-// Define a custom locale (e.g., Spanish)
-const esES: LocaleConfig = {
-  units: {
-    second: 'segundo',
-    minute: 'minuto',
-    hour: 'hora',
-    day: 'día',
-    week: 'semana',
-    month: 'mes',
-    year: 'año',
-  },
-  unitsPlural: {
-    second: 'segundos',
-    minute: 'minutos',
-    hour: 'horas',
-    day: 'días',
-    week: 'semanas',
-    month: 'meses',
-    year: 'años',
-  },
-  relative: {
-    just: 'Ahora mismo',
-    past: 'hace',
-    future: 'en',
-    yesterday: 'Ayer',
-    tomorrow: 'Mañana',
-    previous: 'El',
-    next: 'El próximo',
-    at: 'a las',
-  },
-  days: {
-    short: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'],
-    long: ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'],
-  },
-  months: {
-    short: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-    long: [
-      'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
-      'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
-    ],
-  },
-};
-
-// Use the custom locale
-format(new Date(Date.now() - 5 * 60 * 1000,undefined, { locale: esES }); // "5 minutos hace"
+format(new Date(), undefined, { locale: ptPT });
+format(new Date(), undefined, { timeFormat: '24h', includeTime: false });
+format(new Date(Date.now() - 20_000), undefined, { justNowThreshold: 10 });
 ```
 
-## API Reference
+### Custom Locale
+
+```ts
+import { format, LocaleConfig } from '@dynamic-innovative-studio/friendly-dates';
+
+const esES: LocaleConfig = { ... };
+
+format(new Date(), undefined, { locale: esES });
+```
+
+---
+
+## 📚 API Reference
 
 ### `format(date, referenceDate?, options?)`
 
-Formats a date into a human-friendly string.
-
 #### Parameters
 
-- `date` (required): Date to format (Date object, ISO string, or timestamp)
-- `referenceDate` (optional): Reference date to calculate relative time from (defaults to current time)
-- `options` (optional): Formatting options
+* `date`: Date | string | number — Input date
+* `referenceDate?`: Date — Optional reference to compare from
+* `options?`: Object
 
 #### Options
 
-| Option             | Type                                                                                 | Default  | Description                                                 |
-| ------------------ | ------------------------------------------------------------------------------------ | -------- | ----------------------------------------------------------- |
-| `locale`           | `LocaleConfig`                                                                       | `enUS`   | Locale configuration for i18n                               |
-| `includeTime`      | `boolean`                                                                            | `true`   | Whether to include the time in the output                   |
-| `timeFormat`       | `'12h'` or `'24h'`                                                                   | `'12h'`  | Format for time display                                     |
-| `maxUnit`          | `'second'` \| `'minute'` \| `'hour'` \| `'day'` \| `'week'` \| `'month'` \| `'year'` | `'year'` | Maximum unit to use for relative formatting                 |
-| `justNowThreshold` | `number`                                                                             | `30`     | Threshold in seconds to consider "just now"                 |
-| `useWords`         | `boolean`                                                                            | `true`   | Whether to use words for small numbers or always use digits |
+| Option             | Type         | Default  | Description                    |                   |
+| ------------------ | ------------ | -------- | ------------------------------ | ----------------- |
+| `locale`           | LocaleConfig | `enUS`   | Internationalization config    |                   |
+| `includeTime`      | boolean      | `true`   | Show time component            |                   |
+| `timeFormat`       | \`'12h'      | '24h'\`  | `'12h'`                        | Time format style |
+| `maxUnit`          | string       | `'year'` | Max unit: second → year        |                   |
+| `justNowThreshold` | number       | `30`     | Seconds to consider "just now" |                   |
+| `useWords`         | boolean      | `true`   | Use words or numbers           |                   |
 
-#### Return Value
+---
 
-A string representing the date in a human-friendly format.
+## 🌐 i18n Support
 
-## Browser Support
+* ✅ Built-in:
+  * `brBR`,
+  * `enUS`,
+  * `esES`,
+  * `frFR`,
+  * `ptPT`,
+* ✅ Easy to extend with `LocaleConfig`
 
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- ES2020+ support required
-- No polyfills needed for modern environments
+---
 
-## Development
+## 🌍 Browser & Runtime Support
 
-### Prerequisites
+* Modern Browsers: ✅ Chrome, Firefox, Safari, Edge
+* Node.js: ✅ 18+
+* ES2020+ support
 
-- Node.js 18.x or higher
-- npm or yarn
+---
 
-### Setup
+## 🛠️ Development
 
 ```bash
-# Clone the repository
 git clone https://github.com/Dynamic-Innovative-Studio/friendly-dates.git
 cd friendly-dates
-
-# Install dependencies
 npm install
-
-# Run development build
 npm run dev
 ```
 
-### Available Scripts
+### Scripts
 
-- `npm run build` - Build the library for production
-- `npm run dev` - Start development build with watch mode
-- `npm test` - Run all tests
-- `npm run test:watch` - Run tests in watch mode
-- `npm run test:coverage` - Run tests with coverage report
-- `npm run test:performance` - Run performance benchmarks
-- `npm run lint` - Lint the codebase
-- `npm run lint:fix` - Fix linting issues automatically
-- `npm run format` - Format code with Prettier
-- `npm run type-check` - Run TypeScript type checking
+| Command            | Description         |
+| ------------------ | ------------------- |
+| `dev`              | Watch mode build    |
+| `build`            | Production bundle   |
+| `test`             | Run tests           |
+| `test:coverage`    | Coverage reports    |
+| `test:performance` | Perf benchmarks     |
+| `lint`             | Lint source code    |
+| `lint:fix`         | Auto-fix issues     |
+| `type-check`       | Type safety         |
+| `format`           | Prettier formatting |
 
-### Code Quality
+---
 
-This project uses modern tooling for code quality:
+## 🔁 CI/CD Pipeline
 
-- **TypeScript** with strict configuration for type safety
-- **ESLint** with comprehensive rules for code quality
-- **Prettier** for consistent code formatting
-- **Jest** for testing with coverage reporting
-- **GitHub Actions** for CI/CD pipeline
+Using **GitHub Actions**:
 
-### Contributing
+* ✅ Node 18, 20, 22 testing
+* ✅ Lint & Type Check
+* ✅ Coverage reports
+* ✅ Bundle size analysis
+* ✅ Automated releases
+* ✅ Dependency scanning
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes and ensure tests pass: `npm test`
-4. Lint and format your code: `npm run lint:fix && npm run format`
-5. Commit your changes: `git commit -m 'Add amazing feature'`
-6. Push to the branch: `git push origin feature/amazing-feature`
-7. Open a Pull Request
+---
 
-### CI/CD Pipeline
+## ⚖️ Comparison
 
-This project uses GitHub Actions for continuous integration and deployment:
+| Feature            | Friendly-Dates | moment.js  | date-fns  | dayjs | luxon  | intl-relativeformat |
+| ------------------ | -------------- | ---------- | --------- | ----- | ------ | ------------------- |
+| Bundle Size (gzip) | \~2KB          | \~69KB     | \~16KB    | \~2KB | \~24KB | \~7KB               |
+| Dependencies       | ❌              | ❌          | ❌         | ❌     | ❌      | ✅ (polyfill needed) |
+| TypeScript Support | ✅              | ❌          | ✅         | ✅     | ✅      | ❌                   |
+| Tree-shakeable     | ✅              | ❌          | ✅         | ❌     | ✅      | ❌                   |
+| i18n Customization | ✅              | ⚠️ Partial | ⚠️ Custom | ⚠️    | ✅      | ✅                   |
+| Maintenance Status | ✅              | ❌          | ✅         | ✅     | ✅      | ❌                   |
+| Performance        | 🚀 Ultra Fast  | 🐢 Slow    | 🚀 Fast   | 🚀    | ⚡      | ⚠️ Mediocre         |
 
-- **CI Workflow**: Runs on every push and pull request
-  - Tests across Node.js versions 18.x, 20.x, and 22.x
-  - Type checking with TypeScript
-  - Linting with ESLint
-  - Code coverage reporting
-  - Build verification
+---
 
-- **Code Quality Workflow**: Monitors code quality metrics
-  - SARIF security analysis
-  - Performance testing
-  - Bundle size monitoring
+## 🧾 License
 
-- **Dependency Updates**: Automated weekly dependency updates
-  - Security vulnerability scanning
-  - Automated pull requests for updates
+[MIT License](LICENSE)
 
-- **Publishing**: Automated NPM publishing on release commits
+---
 
-## Performance
-
-FriendlyDate is designed to be lightweight and fast:
-
-- Minimal calculations
-- No external dependencies
-- Optimized for repeated use
-- Less than 2KB gzipped
-- Comprehensive performance testing included
-
-## Comparison with Alternatives
-
-| Feature            | FriendlyDate | moment.js      | date-fns  | dayjs     |
-| ------------------ | ------------ | -------------- | --------- | --------- |
-| Bundle size        | ~2KB         | ~69KB          | ~16KB     | ~2KB      |
-| Dependencies       | 0            | 0              | 0         | 0         |
-| TypeScript         | ✅            | ❌              | ✅         | ✅         |
-| Tree-shakeable     | ✅            | ❌              | ✅         | ❌         |
-| Active maintenance | ✅            | ❌ (deprecated) | ✅         | ✅         |
-| Performance        | Excellent    | Good           | Excellent | Very Good |
-
-## License
-
-[MIT LICENSE](LICENSE)
+> Made with 💡 by [Dynamic Innovative Studio](https://dynamic-innovative-studio.web.app)

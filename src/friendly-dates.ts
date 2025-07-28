@@ -18,6 +18,7 @@
 // ------------ IMPORTS
 import { FormatOptions, FormatPreset, LocaleConfig, TimeUnit } from './types';
 import { enUS } from './locales/en-US';
+import { validateInputs } from './validation';
 
 // ------------ DEFAULT OPTIONS
 /**
@@ -443,16 +444,15 @@ export function format(
   // Runtime validation if enabled
   if (typeof window !== 'undefined' || typeof global !== 'undefined') {
     try {
-      // eslint-disable-next-line @typescript-eslint/no-require-imports
-      const validationModule = require('./validation') as { validateInputs: (date: unknown, options?: unknown) => void };
-      validationModule.validateInputs(date, options);
+      validateInputs(date, options);
     } catch (_error) {
-      // Validation module not available or validation failed, continue without validation (nothing)
+      // Validation failed, continue without validation (nothing)
     }
   }
-  // Additional validation for malformed inputs
-  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-  if (date === null || date === undefined || referenceDate === null || referenceDate === undefined) {
+
+  // Runtime check for null/undefined (handles type casting scenarios)
+  if ((date as unknown) === null || (date as unknown) === undefined ||
+      (referenceDate as unknown) === null || (referenceDate as unknown) === undefined) {
     throw new Error('Invalid date provided');
   }
 

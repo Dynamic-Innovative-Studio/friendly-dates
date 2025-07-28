@@ -20,7 +20,7 @@ By participating in this project, you agree to abide by our Code of Conduct. Ple
 2. **Clone your fork** to your local machine:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/friendly-dates.git
+   git clone https://github.com/dynamic-innovative-studio/friendly-dates.git
    cd friendly-dates
    ```
 
@@ -114,13 +114,38 @@ We use ESLint and Prettier to maintain code quality and consistency. Please ensu
 - Keep functions small and focused on a single task
 - Avoid any-type when possible
 
-## Adding Locales
+## How to Add a New Locale
 
-When adding a new locale:
+Friendly-Dates supports multiple locales. To add a new locale, follow these steps to ensure consistency and full integration:
 
-1. Create a new locale configuration following the `LocaleConfig` interface
-2. Add tests for the new locale
-3. Update the README.md documentation to include the new locale
+### 1. Create the Locale Configuration
+
+- In `src/locales/`, create a new file named after the locale code (e.g., `de-DE.ts` for German).
+- Implement the locale following the `LocaleConfig` interface. Refer to existing locale files (e.g., `en-US.ts`, `fr-FR.ts`) for structure and examples.
+- Include all required fields such as month names, weekday names, and formatting patterns.
+
+### 2. Register the Locale
+
+- Import and export your new locale in `src/locales/index.ts` so it becomes available to the library.
+
+### 3. Add Tests
+
+- Create or update tests in `src/__tests__/` to cover your new locale. Add a dedicated test file if needed (e.g., `locale-de-DE.test.ts`).
+- Ensure tests cover formatting, parsing, and edge cases for your locale.
+
+### 4. Update Documentation
+
+- Add your locale to the list of supported locales in `README.md`.
+- Document any special rules or notes about your locale if applicable.
+
+### 5. Verify and Submit
+
+- Run all tests to ensure nothing is broken: `npm test`
+- Lint and format your code: `npm run lint && npm run format`
+- Build the project: `npm run build`
+- Submit your pull request following the guidelines above.
+
+**Tip:** If your locale has unique date or time conventions, add comments in your locale file to explain them for future maintainers.
 
 ## Testing Guidelines
 

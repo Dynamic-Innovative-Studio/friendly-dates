@@ -12,7 +12,7 @@
     "sourceMap": true,
     "outDir": "./dist",
     "removeComments": false,
-    "importHelpers": true,
+    "importHelpers": false,
 
     // Module Resolution
     "esModuleInterop": true,
