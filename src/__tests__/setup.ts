@@ -83,19 +83,16 @@ expect.extend({
 /**
  * Extend global Jest matcher types to include `toBeWithinRange`.
  */
-declare global {
-  // eslint-disable-next-line @typescript-eslint/no-namespace
-  namespace jest {
-    interface Matchers<R> {
-      /**
-       * Asserts that a number is within a specified range (inclusive).
-       *
-       * @param floor - Minimum expected value.
-       * @param ceiling - Maximum expected value.
-       * @returns Custom matcher result.
-       */
-      toBeWithinRange(floor: number, ceiling: number): R;
-    }
+declare module 'jest' {
+  interface Matchers<R> {
+    /**
+     * Asserts that a number is within a specified range (inclusive).
+     *
+     * @param floor - Minimum expected value.
+     * @param ceiling - Maximum expected value.
+     * @returns Custom matcher result.
+     */
+    toBeWithinRange(floor: number, ceiling: number): R;
   }
 }
 
