@@ -1,6 +1,6 @@
 {
-  "name": "friendly-dates",
-  "version": "3.0.0",
+  "name": "@dynamic-innovative-studio/friendly-dates",
+  "version": "2.0.0",
   "description": "A tiny, super fast, secure and stable, zero-dependency library that formats dates into human-friendly.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
