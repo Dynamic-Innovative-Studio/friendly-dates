@@ -3,12 +3,18 @@
 [![Dynamic Innovative Studio](public/icons/DIS_Original_logo.png)](https://dynamic-innovative-studio.web.app)
 [![Friendly Dates](public/icons/friendly-dates-logo.png)](https://github.com/Dynamic-Innovative-Studio/friendly-dates)
 
+<<<<<<< HEAD
 [![CI](https://github.com/Dynamic-Innovative-Studio/friendly-dates/actions/workflows/ci.yaml/badge.svg)](https://github.com/Dynamic-Innovative-Studio/friendly-dates/actions/workflows/ci.yaml)
 [![Code Quality](https://github.com/Dynamic-Innovative-Studio/friendly-dates/actions/workflows/code-quality.yaml/badge.svg)](https://github.com/Dynamic-Innovative-Studio/friendly-dates/actions/workflows/code-quality.yaml)
 [![npm version](https://img.shields.io/npm/v/@dynamic-innovative-studio/friendly-dates.svg)](https://www.npmjs.com/package/@dynamic-innovative-studio/friendly-dates)
 [![license](https://img.shields.io/npm/l/@dynamic-innovative-studio/friendly-dates.svg)](https://github.com/Dynamic-Innovative-Studio/friendly-dates/blob/main/LICENSE)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@dynamic-innovative-studio/friendly-dates)](https://bundlephobia.com/package/@dynamic-innovative-studio/friendly-dates)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+=======
+[![npm version](https://img.shields.io/npm/v/@dynamic-innovative-studio/friendly-dates.svg)](https://www.npmjs.com/package/@dynamic-innovative-studio/friendly-dates)
+[![license](https://img.shields.io/npm/l/@dynamic-innovative-studio/friendly-dates.svg)](https://github.com/Dynamic-Innovative-Studio/friendly-dates/blob/main/LICENSE)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@dynamic-innovative-studio/friendly-dates)](https://bundlephobia.com/package/@dynamic-innovative-studio/friendly-dates)
+>>>>>>> 09af5265e158d25861497789041b1e2a29c10c14
 
 This is the public repository for the Friendly-Dates - a cutting-edge technology, secure, safe and lighting fast library.
 This technology is owned by Dynamic Innovative Studio.
@@ -26,12 +32,17 @@ This technology is owned by Dynamic Innovative Studio.
 ## Installation
 
 ```bash
+<<<<<<< HEAD
 npm install @dynamic-innovative-studio/friendly-dates
+=======
+npm install friendly-dates
+>>>>>>> 09af5265e158d25861497789041b1e2a29c10c14
 ```
 
 or
 
 ```bash
+<<<<<<< HEAD
 yarn add @dynamic-innovative-studio/friendly-dates
 ```
 
@@ -39,6 +50,9 @@ or
 
 ```bash
 pnpm add @dynamic-innovative-studio/friendly-dates
+=======
+yarn add friendly-dates
+>>>>>>> 09af5265e158d25861497789041b1e2a29c10c14
 ```
 
 ## Usage
@@ -101,6 +115,10 @@ format(new Date()); // Using Date object
 format("2023-10-15T12:00:00Z"); // Using ISO string
 format(1697371200000); // Using timestamp
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> 09af5265e158d25861497789041b1e2a29c10c14
 
 ### Creating Custom Locales
 
