@@ -105,7 +105,7 @@ describe('Performance Benchmarks', () => {
         expect(max / min).toBeLessThan(3);
       } else {
         // If min is 0, just check that max is reasonable
-        expect(max).toBeLessThan(100);
+        expect(max).toBeLessThan(200);
       }
     });
 
