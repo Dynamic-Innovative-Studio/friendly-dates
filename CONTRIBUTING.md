@@ -6,10 +6,24 @@ Thank you for your interest in contributing to Friendly-Dates! This document pro
 
 By participating in this project, you agree to abide by our Code of Conduct. Please be respectful and considerate of others.
 
-## Getting Started
+## Development Setup
+
+### Prerequisites
+
+- Node.js 18.x or higher
+- npm, yarn, or pnpm
+- Git
+
+### Getting Started
 
 1. **Fork the repository** on GitHub
-2. **Clone your fork** to your local machine
+2. **Clone your fork** to your local machine:
+
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/friendly-dates.git
+   cd friendly-dates
+   ```
+
 3. **Install dependencies**:
 
    ```bash
@@ -22,11 +36,18 @@ By participating in this project, you agree to abide by our Code of Conduct. Ple
    git checkout -b feature/your-feature-name
    ```
 
-   or
+### Development Scripts
 
-   ```bash
-   git checkout -b fix/issue-you-are-fixing
-   ```
+- `npm run build` - Build the library for production
+- `npm run dev` - Start development build with watch mode
+- `npm test` - Run all tests
+- `npm run test:watch` - Run tests in watch mode
+- `npm run test:coverage` - Run tests with coverage report
+- `npm run test:performance` - Run performance benchmarks
+- `npm run lint` - Lint the codebase
+- `npm run lint:fix` - Fix linting issues automatically
+- `npm run format` - Format code with Prettier
+- `npm run type-check` - Run TypeScript type checking
 
 ## Development Workflow
 

@@ -4,9 +4,10 @@
 
 We are committed to providing security updates for the following versions of Friendly-Dates:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.0.x   | :white_check_mark: |
+| Version | Supported           |
+|---------|---------------------|
+| 1.0.x   | :x:                 |
+| 2.0.x   | :white_check_mark:  |
 
 ## Reporting a Vulnerability
 

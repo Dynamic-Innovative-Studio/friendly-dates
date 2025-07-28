@@ -1,136 +1,190 @@
-<!--
-
-DEMO.HTML
-
-@version 1.0.0
-@author BleckWolf25
-
-@license MIT Dynamic Innovative Studio
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Friendly Dates Demo</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 2rem;
-        }
-
-        .example {
-            margin-bottom: 1.5rem;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        input,
-        select {
-            margin-bottom: 0.5rem;
-        }
-
-        .output {
-            font-weight: bold;
-            color: #2a7ae2;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendly Dates Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 { color: #333; }
+    h2 { color: #555; }
+    .example, .interactive { margin: 20px 0; }
+    pre {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    label { display: block; margin: 10px 0 5px; }
+    select, input[type="datetime-local"], input[type="checkbox"] {
+      margin: 5px 0;
+      padding: 5px;
+    }
+    #output {
+      font-weight: bold;
+      padding: 10px;
+      background: #eef;
+      border-radius: 5px;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>Friendly Dates Demo</h1>
-    <div class="example">
-        <label>
-            Date/time to format:
-            <input id="dateInput" type="datetime-local" value="">
-        </label>
-        <label>
-            Reference date/time (optional):
-            <input id="refInput" type="datetime-local" value="">
-        </label>
-        <label>
-            Locale:
-            <select id="localeSelect">
-                <option value="enUS">English (enUS)</option>
-                <option value="ptBR">Português (ptBR)</option>
-            </select>
-        </label>
-        <label>
-            Include time:
-            <input id="includeTime" type="checkbox" checked>
-        </label>
-        <label>
-            Time format:
-            <select id="timeFormat">
-                <option value="12h">12h</option>
-                <option value="24h">24h</option>
-            </select>
-        </label>
-        <label>
-            Max unit:
-            <select id="maxUnit">
-                <option value="year">year</option>
-                <option value="month">month</option>
-                <option value="week">week</option>
-                <option value="day">day</option>
-                <option value="hour">hour</option>
-                <option value="minute">minute</option>
-                <option value="second">second</option>
-            </select>
-        </label>
-        <label>
-            Just now threshold (seconds):
-            <input id="justNowThreshold" type="number" value="30" min="0">
-        </label>
-        <label>
-            Use words for small numbers:
-            <input id="useWords" type="checkbox" checked>
-        </label>
-        <button id="formatBtn">Format</button>
-        <div class="output" id="output"></div>
-    </div>
-    <script type="module">
-        import format, { enUS, ptBR } from '../src/friendly-dates.ts';
+  <h1>Friendly Dates Demo</h1>
+  <p>A tiny, secure date formatting library that converts dates into human-friendly relative phrases. <a href="https://github.com/Dynamic-Innovative-Studio/friendly-dates" target="_blank">Learn more</a>.</p>
 
-        // Set default date/time to now
-        const now = new Date();
-        document.getElementById('dateInput').value = now.toISOString().slice(0, 16);
+  <h2>Examples</h2>
 
-        function getLocale(val) {
-            if (val === 'ptBR') return ptBR;
-            return enUS;
-        }
+  <div class="example">
+    <h3>Basic Usage</h3>
+    <pre><code>import { format } from 'friendly-dates';
+const date = new Date(Date.now() - 3600000); // 1 hour ago
+const formatted = format(date);
+console.log(formatted); // "1 hour ago"</code></pre>
+    <p>Output: <span id="example1-output"></span></p>
+  </div>
 
-        document.getElementById('formatBtn').onclick = function () {
-            const dateStr = document.getElementById('dateInput').value;
-            const refStr = document.getElementById('refInput').value;
-            const locale = getLocale(document.getElementById('localeSelect').value);
-            const includeTime = document.getElementById('includeTime').checked;
-            const timeFormat = document.getElementById('timeFormat').value;
-            const maxUnit = document.getElementById('maxUnit').value;
-            const justNowThreshold = Number(document.getElementById('justNowThreshold').value);
-            const useWords = document.getElementById('useWords').checked;
+  <div class="example">
+    <h3>Different Locale (Brazilian Portuguese)</h3>
+    <pre><code>import { format, brBR } from 'friendly-dates';
+const date = new Date(Date.now() - 86400000); // 1 day ago
+const formatted = format(date, new Date(), { locale: brBR });
+console.log(formatted); // "Ontem"</code></pre>
+    <p>Output: <span id="example2-output"></span></p>
+  </div>
 
-            let date = dateStr ? new Date(dateStr) : new Date();
-            let ref = refStr ? new Date(refStr) : undefined;
+  <div class="example">
+    <h3>Using Preset (Social)</h3>
+    <pre><code>import { format } from 'friendly-dates';
+const date = new Date(Date.now() - 7200000); // 2 hours ago
+const formatted = format(date, new Date(), { preset: 'social' });
+console.log(formatted); // "about two hours ago"</code></pre>
+    <p>Output: <span id="example3-output"></span></p>
+  </div>
 
-            try {
-                const result = format(
-                    date,
-                    ref,
-                    { locale, includeTime, timeFormat, maxUnit, justNowThreshold, useWords }
-                );
-                document.getElementById('output').textContent = result;
-            } catch (e) {
-                document.getElementById('output').textContent = 'Error: ' + e.message;
-            }
-        };
-    </script>
+  <div class="example">
+    <h3>Custom Options</h3>
+    <pre><code>import { format } from 'friendly-dates';
+const date = new Date(Date.now() - 604800000); // 1 week ago
+const formatted = format(date, new Date(), { includeTime: false, useWords: true });
+console.log(formatted); // "a week ago"</code></pre>
+    <p>Output: <span id="example4-output"></span></p>
+  </div>
+
+  <h2>Interactive Demo</h2>
+  <div class="interactive">
+    <label for="date-input">Select a date and time:</label>
+    <input type="datetime-local" id="date-input">
+
+    <label for="locale-select">Locale:</label>
+    <select id="locale-select">
+      <option value="en-US">English (US)</option>
+      <option value="br-BR">Portuguese (Brazil)</option>
+      <option value="pt-PT">Portuguese (Portugal)</option>
+      <option value="es-ES">Spanish (Spain)</option>
+      <option value="fr-FR">French (France)</option>
+    </select>
+
+    <label for="preset-select">Preset:</label>
+    <select id="preset-select">
+      <option value="">None</option>
+      <option value="social">Social</option>
+      <option value="formal">Formal</option>
+      <option value="compact">Compact</option>
+      <option value="accessibility">Accessibility</option>
+    </select>
+
+    <label><input type="checkbox" id="include-time"> Include time</label>
+    <label><input type="checkbox" id="use-words"> Use words for numbers</label>
+
+    <p>Formatted output: <span id="output"></span></p>
+  </div>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/friendly-dates@latest/dist/index.js">
+    import { format, enUS, brBR, ptPT, esES, frFR } from 'https://unpkg.com/friendly-dates@latest/dist/index.js';
+
+    const locales = {
+      'en-US': enUS,
+      'br-BR': brBR,
+      'pt-PT': ptPT,
+      'es-ES': esES,
+      'fr-FR': frFR
+    };
+
+    const dateInput = document.getElementById('date-input');
+    const localeSelect = document.getElementById('locale-select');
+    const presetSelect = document.getElementById('preset-select');
+    const includeTimeCheckbox = document.getElementById('include-time');
+    const useWordsCheckbox = document.getElementById('use-words');
+    const outputSpan = document.getElementById('output');
+
+    // Set initial date to one hour ago
+    const oneHourAgo = new Date(Date.now() - 3600000);
+    dateInput.value = oneHourAgo.toISOString().slice(0, 16);
+
+    // Update output function
+    function updateOutput() {
+      const inputDateStr = dateInput.value;
+      if (!inputDateStr) {
+        outputSpan.textContent = 'Please select a date';
+        return;
+      }
+
+      const inputDate = new Date(inputDateStr);
+      if (isNaN(inputDate.getTime())) {
+        outputSpan.textContent = 'Invalid date';
+        return;
+      }
+
+      const selectedLocale = locales[localeSelect.value];
+      const selectedPreset = presetSelect.value || undefined;
+      const includeTime = includeTimeCheckbox.checked;
+      const useWords = useWordsCheckbox.checked;
+
+      const options = {
+        locale: selectedLocale,
+        preset: selectedPreset,
+        includeTime,
+        useWords
+      };
+
+      const formatted = format(inputDate, new Date(), options);
+      outputSpan.innerHTML = formatted; // Use innerHTML to support accessibility HTML
+    }
+
+    // Add event listeners
+    dateInput.addEventListener('change', updateOutput);
+    localeSelect.addEventListener('change', updateOutput);
+    presetSelect.addEventListener('change', updateOutput);
+    includeTimeCheckbox.addEventListener('change', updateOutput);
+    useWordsCheckbox.addEventListener('change', updateOutput);
+
+    // Initial render
+    updateOutput();
+
+    // Render examples
+    function renderExamples() {
+      const now = new Date();
+
+      const date1 = new Date(now.getTime() - 3600000); // 1 hour ago
+      document.getElementById('example1-output').innerHTML = format(date1, now);
+
+      const date2 = new Date(now.getTime() - 86400000); // 1 day ago
+      document.getElementById('example2-output').innerHTML = format(date2, now, { locale: brBR });
+
+      const date3 = new Date(now.getTime() - 7200000); // 2 hours ago
+      document.getElementById('example3-output').innerHTML = format(date3, now, { preset: 'social' });
+
+      const date4 = new Date(now.getTime() - 604800000); // 1 week ago
+      document.getElementById('example4-output').innerHTML = format(date4, now, { includeTime: false, useWords: true });
+    }
+
+    renderExamples();
+  </script>
 </body>
-
 </html>

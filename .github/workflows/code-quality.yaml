@@ -1,0 +1,78 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  code-analysis:
+    name: Code Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint with SARIF output
+        run: |
+          npx eslint src --format @microsoft/eslint-formatter-sarif --output-file eslint-results.sarif || true
+
+      - name: Upload ESLint results to GitHub
+        if: always()
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: eslint-results.sarif
+          wait-for-processing: true
+
+      - name: Generate complexity report
+        run: |
+          npx complexity-report --output complexity.json src || true
+
+      - name: Check bundle size
+        run: |
+          npm run build
+          npx bundlesize || true
+
+  performance-test:
+    name: Performance Testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run performance tests
+        run: npm test -- --testNamePattern="Performance" --watchAll=false
+
+      - name: Benchmark against main
+        if: github.event_name == 'pull_request'
+        run: |
+          # This would run performance benchmarks and compare with main branch
+          echo "Performance benchmarking would run here"
